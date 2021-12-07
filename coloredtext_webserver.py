@@ -98,6 +98,7 @@ if (__name__ == "__main__"):
         import colored_text_module
     except ImportError as e:
         getfilefromweb('https://raw.githubusercontent.com/CPlusPlusNewb/finalthingy/main/colored_text_module.py')
+        import colored_text_module as ctm
         ctm.clear()
         installed_colored_text_module = True
 #---------------------------------------------------------------------------------
@@ -105,6 +106,7 @@ if (__name__ == "__main__"):
         import writeaindex
     except ImportError as e:
         getfilefromweb('https://raw.githubusercontent.com/CPlusPlusNewb/finalthingy/main/writeaindex.py')
+        import colored_text_module as ctm
         ctm.clear()
         installed_writeanidex = True
 #---------------------------------------------------------------------------------
