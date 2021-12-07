@@ -3,11 +3,11 @@ import time
 import colored_text_module as ctm
 
 def writeanindex(filepath):
-    file_exists = exists(filepath)
+    file_exists = exists(filepath + '/index.html')
     if (file_exists == False):
         ctm.error('FILE DETECTION', 'index.html does not exist, making you a basic one now', 'blue', False)
-        f = open(filepath + "/index.html", "w")
-        f.write("<html><p>hola!</p></html>")
+        f = open(filepath + '/index.html', 'w')
+        f.write('<html><p>hola!</p></html>')
         f.close()
         #the sleep is useless, just makes them think its doing hard work lmfao
         time.sleep(4)
