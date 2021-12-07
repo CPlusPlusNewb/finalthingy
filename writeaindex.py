@@ -1,6 +1,7 @@
 from os.path import exists
 import time
 import colored_text_module as ctm
+import os 
 
 def clear4():
     if os.name == 'nt':
