@@ -5,7 +5,6 @@ import socketserver
 import os 
 import sys
 import webbrowser
-import writeaindex as wai
 bashcmd = os.system
 
 def getfilefromweb(file):
@@ -44,6 +43,7 @@ def bigline_seperator():
     print(Style.RESET_ALL, end="") 
 
 def main2():
+    import writeaindex as wai
     import colored_text_module as ctm
     try:
         try:

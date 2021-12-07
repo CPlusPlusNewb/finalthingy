@@ -1,14 +1,13 @@
 from os.path import exists
 import time
-import os
 import colored_text_module as ctm
-bashcmd = os.system
 
-def clear3():
+def clear4():
     if os.name == 'nt':
         bashcmd('cls')
     else:
         bashcmd('clear')
+
 def writeanindex(filepath):
     file_exists = exists(filepath)
     if (file_exists == False):
@@ -19,6 +18,6 @@ def writeanindex(filepath):
         #the sleep is useless, just makes them think its doing hard work lmfao
         time.sleep(4)
     else:
-        clear3()
+        clear4()
         ctm.error('FILE DETECTION', 'index.html already exsists', 'blue', False)
         time.sleep(2)
